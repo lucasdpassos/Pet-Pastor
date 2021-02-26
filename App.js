@@ -28,7 +28,7 @@ export default function App() {
       <KeyboardAvoidingView style={styles.background}>
         <View style={styles.containerLogo}>
           <Image
-          source={require('./src/assets/cut1.png')} />
+          source={require('./src/assets/pastor.png')} />
         </View>
 
         <Animated.View style={[styles.container, {
@@ -40,7 +40,7 @@ export default function App() {
         }]}>
           <TextInput 
           style={styles.input}
-          placeholder="Nome"
+          placeholder="Email"
           autoCorrect={false}
           onChangeText={() => {
             
@@ -59,7 +59,7 @@ export default function App() {
             <Text style={styles.submitText}>Acessar</Text>
           </TouchableOpacity>
           <TouchableOpacity style={styles.btnCalendar}>
-            <Text style={styles.submitText}>Calendário das Giras</Text>
+            <Text style={styles.submitText}>Cadastro</Text>
           </TouchableOpacity>
         </Animated.View>
       </KeyboardAvoidingView>
@@ -75,7 +75,7 @@ const styles = StyleSheet.create({
     flex:1,
     alignItems:'center',
     justifyContent:'center',
-    backgroundColor:'azure'   
+    backgroundColor:'#231f20'   
 
   },
   containerLogo: {
@@ -103,7 +103,7 @@ const styles = StyleSheet.create({
     padding:10
   },
   btnSubmit: {
-    backgroundColor:'#35AAFF',
+    backgroundColor:'#24feff',
     width:'90%',
     height:45,
     alignItems:'center',
@@ -112,7 +112,7 @@ const styles = StyleSheet.create({
 
   },
   submitText: {
-    color:'#FFF',
+    color:'#231f20',
     fontSize:18
   },
   btnCalendar: {
